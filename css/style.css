@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* ajusta o tamanho dos elementos automaticamente */
 }
 
 body{
@@ -24,4 +25,32 @@ i {
     background: pink;
     padding: 8px 16px;
     z-index: 2;
+}
+
+.menu{ /* funciona para todos os menus */
+   display: flex;
+   align-items: center;
+   background: #222;
+   gap: 25px;
+   list-style: none;
+
+}
+
+.menu-item{ /* responsavel pr oranizar o conteud dos teto */
+    width: 100%;
+
+}
+
+
+.menu-link {
+    display: flex;
+    text-decoration: none;
+    
+}
+
+.menu-texto{
+    font-size: 20px;
+    text-transform: uppercase;
+
+
 }
