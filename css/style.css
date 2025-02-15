@@ -1,3 +1,24 @@
+/* Definir cores Tema Dark */
+:root,
+:root[data-theme="dark"]{
+
+    --bg-body:black;
+    --bg-header: black ;
+    --icone-tema: white;
+    --cor-texto: white;
+
+}
+
+/* Definir cores tema Kight */
+
+:root[data-theme="light"]{
+
+    --bg-body: grey;
+    --bg-header:white ;
+    --icone-tema: black;
+    --cor-texto: black;
+}
+
 /* reset css */
 * {
     margin: 0;
@@ -6,12 +27,19 @@
 }
 
 body {
-    background: #222; /* cor fundo */
-    color: #d2d2d2;  /* cor texto */
+    background: var(--bg-body); /* cor fundo */
+    color: var(--cor-texto);  /* cor texto */
 }
 
+h1{
+    font-size: 40px;
+    font-weight: 200;
+}
+
+
+
 i {
-    color: aqua;
+    color: var(--icone-tema);
     font-size: 20px; /* tamanho do texto */
 }
 
@@ -21,15 +49,16 @@ i {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: #222;
+    background: var(--bg-header);
     padding: 8px 16px;
     z-index: 2;
+    color: var(--cor-texto);
 }
 
 .menu { 
     display: flex;
     align-items: center;
-    background: #222; /* cor fundo */
+    background: var(--bg-header); /* cor fundo */
     gap: 25px;
     list-style: none;
 }
@@ -59,7 +88,7 @@ i {
 .menu-link.active .menu-texto,
 .menu-link:hover .menu-icone,
 .menu-link:hover .menu-texto{
-    color: #f3f3f3;
+    color: var(--cor-texto);
     font-weight: 400;
 }
 
@@ -76,7 +105,8 @@ i {
 } */
 
 .menu-icone {
-    font-size: 25px;
+    font-size: 30px;
+    color:var(--cor-texto)
 }
 
 .menu-principal {
@@ -114,7 +144,7 @@ i {
         position: ;
         border-bottom: 1px solid #f3f3f3;
         padding: 16px 80px;
-        background: #222;
+        background: var(--bg-header);
     }
 }
 
@@ -146,4 +176,17 @@ i {
     #header{
         padding: 92px 40px 64px;
     }
+}
+
+
+
+#toggleTheme {
+    font-size: 24px;
+    color: var(--icone-tema);
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+}
+
+.menu-social{
+    background:var(--bg-body);
 }
