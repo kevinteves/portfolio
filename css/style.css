@@ -286,6 +286,38 @@ a{
         width: 55%;
     }
 }
+
+/* CAROULSEL */
+
+.projetos h2{
+    margin-top: 150px;
+}
+
+.caroulsel{
+    width: 80%;
+    max-width: 70vh;
+    height: 40vh;
+    overflow: hidden;
+    position: 0cqw;
+    border-radius: 12px;
+    margin: 20px auto;
+    box-shadow: 4pix 8px rgb(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
+.slides {
+    display: flex;
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide{
+    width: 100%;
+}
+
+.slide img{
+    width: 100%;
+}
+
 /* CSS Responsivo */
 @media (min-width: 768px) {  /* a partir de: 768px */
     #header {
@@ -294,6 +326,16 @@ a{
         padding: 16px 80px;
         background: var(--bg-header);
     }
+    .header-nav{
+    display: flex;
+}
+
+    .header-nav,
+    .header-toggle {
+        min-width: 30%;
+    }
+
+
 }
 
 .nav-mobile{
